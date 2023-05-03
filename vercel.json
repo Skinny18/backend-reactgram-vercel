@@ -1,14 +1,13 @@
 {
-    "name": "backend",
     "version": 2,
     "public":true,
     "build":{
-        "src": "backend/app.js",
+        "src": "app.js",
         "use":"@vercel/node"
     },
     "routes": [{
-        "src": "backend/routes",
-        "dest": "backend/app.js"
+        "src": "routes/Router.js",
+        "dest": "app.js"
     }]
 
 }
